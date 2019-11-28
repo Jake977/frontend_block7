@@ -106,13 +106,13 @@
   line-height: 40px; }
 
 .icon--burger {
-  background-image: url("/img/icon_burger.svg"); }
+  background-image: url(./static/icon_burger.svg); }
 
 .icon--repair {
-  background-image: url("/img/icon_repair.svg"); }
+  background-image: url(./static/icon_repair.svg); }
 
 .icon--checkstatus {
-  background-image: url("/img/icon_checkstatus.svg"); }
+  background-image: url(./static/icon_checkstatus.svg); }
 
 .service {
   border-top: 1px solid #D9FFF5; }
