@@ -7,13 +7,14 @@
     <title>Webpack 4 Starter</title>
 <link href="style.css" rel="stylesheet"></head>
 <body class="site">
+<main class="main">
   
-  <div class="header">
+  <section class="header">
       <button class="button" type="button">
         <div class="icon icon--burger"></div>
       </button>
       <div class="logo">
-        <img class="logo__img" src="img/csp_logo.svg" alt="">
+        <img class="logo__img" src="/img/csp_logo.svg" alt="">
       </div>
       <div class="header__divider"></div>
       <button class="button" type="button">
@@ -22,39 +23,51 @@
       <button class="button" type="button">
         <div class="icon icon--checkstatus"></div>
       </button>
-  </div>
+  </section>
   
   
   <section class="service">
     <div class="service__header">
       <h1 class="service__title">Услуги и сервисы</h1>
-      <div class="service__buttons">
+      <div class="service__buttons service__buttons--visibility">
         <button type="button" class="button">Оставить заявку
           <div class="icon icon--repair"></div></button>
         <button type="button" class="button">Статус ремонта
           <div class="icon icon--checkstatus"></div></button>
       </div>
     </div>
-    <nav class="layout_flex">
+    <nav>
       <ul class="menu">
-        <li class="active"><a href="#">Ремонтируемые бренды</a></li>
-        <li><a href="#">Ремонтируемые устройства</a></li>
-        <li><a href="#">Цены на услуги</a></li>
-        <li><a href="#">Адреса сервисных центров</a></li>
-        <li><a href="#">Специальные цены</a></li>
-        <li><a href="#">Отзывы</a></li>
+        <li class="menu__item menu__item--active">
+          <a class="menu__link" href="#">Ремонтируемые бренды</a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="#">Ремонтируемые устройства</a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="#">Цены на услуги</a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="#">Адреса сервисных центров</a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="#">Специальные цены</a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="#">Отзывы</a>
+        </li>
       </ul>
     </nav>
     <div class="content service__content">
-      <div class="service__text">
-        <p>Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас
+      <div class="content__text">
+        <p class="">Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас
           вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.
         </p>
         <p>Мы успешно работаем с 1992 года и заслужили репутацию надежного пертнёра, что подтверждает
           большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям
           и в свою очередь, советуют нас родным и близким.
         </p>
-        <button type="button" class="btn icon_readmore">
+        <button class="button icon--readmore" type="button">
           Читать далее
         </button>
       </div>
@@ -64,7 +77,6 @@
     </div>
   </section>
   
-
   
   <section class="brands">
     <h2 class="brands__title title-section">
@@ -107,6 +119,6 @@
       <div class="footer__offertinfo">Информация размещенная на данной странице не является публичной офертой</div>
   </footer>
   
-
+</main>
 <script type="text/javascript" src="./js/bundle.js"></script></body>
 </html>
