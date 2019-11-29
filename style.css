@@ -47,6 +47,119 @@
   border-radius: 6px;
   background: #FFFFFF; }
 
+.brands__content {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-content: flex-start;
+  flex-wrap: nowrap;
+  padding: 14px;
+  overflow-x: scroll; }
+
+.brands__content .brands__item {
+  display: block;
+  box-sizing: border-box;
+  height: 72px;
+  min-width: 230px;
+  padding: 5px 20px;
+  border: 1px solid #EAEAEA;
+  border-radius: 6px;
+  background-image: url("/img/go_arrow.svg");
+  background-position: 90% 50%;
+  background-repeat: no-repeat;
+  background-color: #ffffff;
+  transition: border-left, border-right, 0.25s ease; }
+
+.brands__img {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%); }
+
+.brands__item--margins {
+  margin: 10px; }
+
+.brands__content .brands__item:hover {
+  border-radius: 12px;
+  border-left: 5px solid #FF3E79;
+  border-right: 5px solid #FF3E79;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.25); }
+
+.tech__content {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-content: flex-start;
+  flex-wrap: nowrap;
+  padding: 14px;
+  overflow-x: scroll; }
+
+.tech__content .tech__item {
+  display: block;
+  box-sizing: border-box;
+  height: 155px;
+  min-width: 230px;
+  padding: 15px 20px;
+  border: 1px solid #EAEAEA;
+  border-radius: 6px;
+  background-image: url("/img/go_arrow.svg");
+  background-position: 90% 85%;
+  background-repeat: no-repeat;
+  background-color: #ffffff;
+  color: #1B1C21;
+  font-size: 16px;
+  text-decoration: none;
+  transition: border-left, border-right, 0.25s ease; }
+
+.tech__item--margins {
+  margin: 10px; }
+
+.tech__content .tech__item:hover {
+  border-radius: 12px;
+  border-left: 5px solid #FF3E79;
+  border-right: 5px solid #FF3E79;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.25); }
+
+.price-content {
+  margin: 20px; }
+
+.price-table {
+  flex-direction: row;
+  flex-wrap: nowrap;
+  background-color: #ffffff;
+  border-radius: 6px;
+  font-size: 14px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  width: 260;
+  height: 200px;
+  overflow-x: scroll; }
+
+.price-table__row {
+  display: inline-flex;
+  height: 165px;
+  width: 260px;
+  border: 1px solid #EAEAEA;
+  border-radius: 6px;
+  padding: 15px;
+  color: #7E7E82; }
+
+.price-table__cell:nth-child(2n) {
+  margin-bottom: 10px;
+  color: #1B1C21; }
+
+.price-table__cell:last-child {
+  align-self: flex-end; }
+
+.price-table .price__order {
+  background-color: #FF3E79;
+  width: 120px;
+  height: 32px;
+  border-radius: 16px;
+  border: none;
+  cursor: pointer;
+  color: #ffffff; }
+
 .site {
   font-family: "TT Lakes";
   background-color: #F2F2F2;
@@ -67,7 +180,8 @@
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   font-weight: normal;
-  font-size: 16px; }
+  font-size: 16px;
+  color: #7E7E82; }
 
 .icon {
   display: inline-block;
@@ -97,6 +211,8 @@
   background-color: #EAEAEA; }
 
 .button {
+  font-family: "TT Lakes";
+  font-size: 16px;
   border: none;
   cursor: pointer;
   background-color: transparent; }
@@ -114,6 +230,12 @@
 
 .icon--checkstatus {
   background-image: url("/img/icon_checkstatus.svg"); }
+
+.button--readmore {
+  background-image: url("/img/icon_arrows_down.svg");
+  background-position: 0% 50%;
+  background-repeat: no-repeat;
+  padding-left: 30px; }
 
 .service {
   border-top: 1px solid #D9FFF5; }
@@ -138,11 +260,25 @@
 .service__buttons--visibility {
   display: none; }
 
+.service__text--visibility {
+  display: none; }
+
 .content__text {
   margin: 30px; }
 
 .content__img {
   max-width: 100%; }
+
+.price__text {
+  margin: 30px; }
+
+.price__link {
+  font-family: "TT Lakes";
+  font-size: 16px;
+  font-weight: bold;
+  text-align: left;
+  text-decoration: none;
+  color: #1B1C21; }
 
 .footer {
   display: -webkit-box;
@@ -152,17 +288,24 @@
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
   border-top: 1px solid #D9FFF5;
-  padding: 10px; }
+  color: #7E7E82;
+  padding: 10px;
+  font-size: 14px; }
 
-.footer__copy {
-  text-align: center; }
+.footer .footer__text {
+  text-align: center;
+  margin-bottom: 10px; }
+
+.footer .footer__link {
+  text-decoration: none;
+  color: #7E7E82; }
+
+.footer .footer__link:hover {
+  text-decoration: underline; }
 
 
 /*# sourceMappingURL=style.css.map*/
