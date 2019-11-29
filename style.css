@@ -115,6 +115,7 @@
   border-right: 5px solid #FF3E79;
   box-shadow: 0 2px 2px rgba(0, 0, 0, 0.25); }
 
+/* prices (start) */
 .price-content {
   display: flex;
   margin: 20px;
@@ -162,6 +163,7 @@
   text-transform: uppercase;
   color: #ffffff; }
 
+/* prices (end) */
 .site {
   font-family: "TT Lakes";
   background-color: #F2F2F2;
