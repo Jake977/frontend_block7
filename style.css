@@ -68,15 +68,13 @@
   background-position: 90% 50%;
   background-repeat: no-repeat;
   background-color: #ffffff;
-  transition: border-left, border-right, 0.25s ease; }
+  transition: border-left, border-right, 0.25s ease;
+  margin: 10px; }
 
 .brands__img {
   position: relative;
   top: 50%;
   transform: translateY(-50%); }
-
-.brands__item--margins {
-  margin: 10px; }
 
 .brands__content .brands__item:hover {
   border-radius: 12px;
@@ -108,9 +106,7 @@
   color: #1B1C21;
   font-size: 16px;
   text-decoration: none;
-  transition: border-left, border-right, 0.25s ease; }
-
-.tech__item--margins {
+  transition: border-left, border-right, 0.25s ease;
   margin: 10px; }
 
 .tech__content .tech__item:hover {
@@ -120,27 +116,28 @@
   box-shadow: 0 2px 2px rgba(0, 0, 0, 0.25); }
 
 .price-content {
-  margin: 20px; }
+  display: flex;
+  margin: 20px;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  min-height: 200px; }
 
 .price-table {
-  flex-direction: row;
+  display: flex;
+  flex-direction: column;
   flex-wrap: nowrap;
-  background-color: #ffffff;
-  border-radius: 6px;
-  font-size: 14px;
   padding: 0;
   margin: 0;
   list-style: none;
-  width: 260;
-  height: 200px;
-  overflow-x: scroll; }
+  margin: 0 15px 20px 0; }
 
 .price-table__row {
-  display: inline-flex;
-  height: 165px;
-  width: 260px;
-  border: 1px solid #EAEAEA;
+  position: relative;
+  height: 160px;
+  width: 220px;
+  background-color: #ffffff;
   border-radius: 6px;
+  font-size: 14px;
   padding: 15px;
   color: #7E7E82; }
 
@@ -149,7 +146,9 @@
   color: #1B1C21; }
 
 .price-table__cell:last-child {
-  align-self: flex-end; }
+  position: absolute;
+  bottom: 15px;
+  right: 15px; }
 
 .price-table .price__order {
   background-color: #FF3E79;
@@ -158,6 +157,9 @@
   border-radius: 16px;
   border: none;
   cursor: pointer;
+  font-size: 12px;
+  line-height: 24px;
+  text-transform: uppercase;
   color: #ffffff; }
 
 .site {
