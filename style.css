@@ -53,7 +53,8 @@
   justify-content: flex-start;
   align-content: flex-start;
   flex-wrap: nowrap;
-  padding: 14px;
+  margin: 20px;
+  overflow-y: hidden;
   overflow-x: scroll; }
 
 .brands__content .brands__item {
@@ -88,7 +89,7 @@
   justify-content: flex-start;
   align-content: flex-start;
   flex-wrap: nowrap;
-  padding: 14px;
+  margin: 20px;
   overflow-x: scroll; }
 
 .tech__content .tech__item {
@@ -157,11 +158,43 @@
   height: 32px;
   border-radius: 16px;
   border: none;
+  text-align: left;
+  padding-left: 20px;
   cursor: pointer;
   font-size: 12px;
   line-height: 24px;
   text-transform: uppercase;
   color: #ffffff; }
+
+.price-table .price__order:hover {
+  background-color: #FF004E; }
+
+.price-table .price__order--icon-arrow {
+  background-image: url(./static/icon_white_arrow.svg);
+  background-position: 85% 50%;
+  background-repeat: no-repeat; }
+
+.price__text {
+  margin: 30px; }
+
+.price__offer {
+  position: relative; }
+
+.price__link {
+  font-family: "TT Lakes";
+  font-size: 16px;
+  font-weight: bold;
+  text-align: left;
+  text-decoration: none;
+  color: #1B1C21; }
+
+.price__link:hover {
+  color: #FF3E79; }
+
+.price__offer::after {
+  position: absolute;
+  content: url(./static/icon_red_arrow.svg);
+  padding: 2px 0 0 5px; }
 
 /* prices (end) */
 .site {
@@ -196,6 +229,9 @@
   border-radius: 50%;
   background-position: 50% 50%;
   background-repeat: no-repeat; }
+
+.icon:hover {
+  background-color: #FF004E; }
 
 .header {
   display: -webkit-box;
@@ -272,17 +308,6 @@
 
 .content__img {
   max-width: 100%; }
-
-.price__text {
-  margin: 30px; }
-
-.price__link {
-  font-family: "TT Lakes";
-  font-size: 16px;
-  font-weight: bold;
-  text-align: left;
-  text-decoration: none;
-  color: #1B1C21; }
 
 .footer {
   display: -webkit-box;
