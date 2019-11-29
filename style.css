@@ -101,7 +101,7 @@
   padding: 15px 20px;
   border: 1px solid #EAEAEA;
   border-radius: 6px;
-  background-image: url("/img/go_arrow.svg");
+  background-image: url(./static/go_arrow.svg);
   background-position: 90% 85%;
   background-repeat: no-repeat;
   background-color: #ffffff;
