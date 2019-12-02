@@ -96,6 +96,7 @@ $bgColor: #f8f8f8;
   padding-left: 30px;
 }
 
+/* service (start) */
 .service {
   border-top: 1px solid #D9FFF5;
 }
@@ -132,7 +133,9 @@ $bgColor: #f8f8f8;
 .content__img {
   max-width: 100%;
 }
+/* service (end) */
 
+/* footer (start) */
 .footer {
   display: flex;
   flex-direction: column;
@@ -156,3 +159,4 @@ $bgColor: #f8f8f8;
 .footer__link:hover {
   text-decoration: underline;
 }
+/* footer (end) */
