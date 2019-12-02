@@ -1,0 +1,37 @@
+.brands__content {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-content: flex-start;
+  flex-wrap: nowrap;
+  padding: 14px 14px 0;
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+
+.brands__content .brands__item {
+  display: block;
+  box-sizing: border-box;
+  height: 72px;
+  min-width: 230px;
+  padding: 5px 20px;
+  border: 1px solid #EAEAEA;
+  border-radius: 6px;
+  background-image: url("/img/go_arrow.svg");
+  background-position: 90% 50%;
+  background-repeat: no-repeat;
+  background-color: #ffffff;
+  transition: border-left, border-right, 0.25s ease;
+}
+
+.brands__img {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.brands__item--margins {
+  margin: 0 10px 16px;
+}
+
+/*# sourceMappingURL=brands.css.map */

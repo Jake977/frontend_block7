@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title><%= htmlWebpackPlugin.options.title %></title>
+</head>
+<body class="site">
+<main class="main">
+  <!--header(start) -->
+  <section class="header">
+      <button class="button" type="button">
+        <div class="icon icon--burger"></div>
+      </button>
+      <div class="logo">
+        <img class="logo__img" src="./img/csp_logo.svg" alt="">
+      </div>
+      <div class="header__divider"></div>
+      <button class="button" type="button">
+        <div class="icon icon--repair"></div>
+      </button>
+      <button class="button" type="button">
+        <div class="icon icon--checkstatus"></div>
+      </button>
+  </section>
+  <!--header(end) -->
+  <!--service(start) -->
+  <section class="service">
+    <div class="service__header">
+      <h1 class="service__title">Услуги и сервисы</h1>
+      <div class="service__buttons service__buttons--visibility">
+        <button type="button" class="button">Оставить заявку
+          <div class="icon icon--repair"></div></button>
+        <button type="button" class="button">Статус ремонта
+          <div class="icon icon--checkstatus"></div></button>
+      </div>
+    </div>
+    <nav>
+      <ul class="menu">
+        <li class="menu__item menu__item--active">
+          <a class="menu__link" href="#">Ремонтируемые бренды</a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="#">Ремонтируемые устройства</a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="#">Цены на услуги</a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="#">Адреса сервисных центров</a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="#">Специальные цены</a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="#">Отзывы</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="service__content-text">
+      <div class="content__text">
+        <p class="service__text1">Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас
+          вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.
+        </p>
+        <p class="service__text2 service__text--visibility">Мы успешно работаем с 1992 года и заслужили репутацию надежного пертнёра,
+          что подтверждает большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются
+          по рекомендациям и в свою очередь, советуют нас родным и близким.
+        </p>
+        <button class="button service__button button--readmore" type="button">
+          Читать далее
+        </button>
+      </div>
+      <div>
+        <img class="content__img" src="./img/content_cpslogo.jpg" alt="Табличка с логотипом CPS">
+      </div>
+    </div>
+  </section>
+  <!--service(end) -->
+  <!-- brands (start) -->
+  <section class="brands">
+    <h2 class="brands__title title-section">
+      Ремонт техники различных брендов
+    </h2>
+    <div class="brands__content">
+      <a href="#" class="brands__item"><img class="brands__img" src="img/logo_lenovo.png" alt="логотип Lenovo"></a>
+      <a href="#" class="brands__item"><img class="brands__img" src="img/logo_samsung.png" alt="логотип Samsung"></a>
+      <a href="#" class="brands__item"><img class="brands__img" src="img/logo_apple.png" alt="логотип Apple"></a>
+      <a href="#" class="brands__item"><img class="brands__img" src="img/logo_viewsonic.png" alt="логотип ViewSonic"></a>
+      <a href="#" class="brands__item"><img class="brands__img" src="img/logo_bosch.png" alt="логотип BOSCH"></a>
+      <a href="#" class="brands__item"><img class="brands__img" src="img/logo_hp.png" alt="логотип HP"></a>
+      <a href="#" class="brands__item"><img class="brands__img" src="img/logo_acer.png" alt="логотип ACER"></a>
+      <a href="#" class="brands__item"><img class="brands__img" src="img/logo_sony.png" alt="логотип SONY"></a>
+      <a href="#" class="brands__item"><img class="brands__img" src="img/logo_samsung.png" alt="логотип Samsung"></a>
+      <a href="#" class="brands__item"><img class="brands__img" src="img/logo_apple.png" alt="логотип Apple"></a>
+      <a href="#" class="brands__item"><img class="brands__img" src="img/logo_viewsonic.png" alt="логотип ViewSonic"></a>
+      <a href="#" class="brands__item"><img class="brands__img" src="img/logo_lenovo.png" alt="логотип Lenovo"></a>
+      <a href="#" class="brands__item"><img class="brands__img" src="img/logo_acer.png" alt="логотип ACER"></a>
+    </div>
+  </section>
+  <!-- brands (end) -->
+  <!-- tech (start) -->
+  <section class="tech">
+    <h2 class="tech__title title-section">
+      Ремонт различных видов техники
+    </h2>
+    <div class="tech__content">
+      <a href="#" class="tech__item">Ремонт ноутбуков</a>
+      <a href="#" class="tech__item">Ремонт планшетов</a>
+      <a href="#" class="tech__item ">Ремонт ПК</a>
+      <a href="#" class="tech__item">Ремонт мониторов</a>
+      <a href="#" class="tech__item">Ремонт телефонов</a>
+      <a href="#" class="tech__item">Ремонт принтеров</a>
+      <a href="#" class="tech__item">Ремонт ноутбуков</a>
+      <a href="#" class="tech__item">Ремонт планшетов</a>
+      <a href="#" class="tech__item">Ремонт ПК</a>
+      <a href="#" class="tech__item">Ремонт мониторов</a>
+      <a href="#" class="tech__item">Ремонт телефонов</a>
+      <a href="#" class="tech__item">Ремонт принтеров</a>
+      <a href="#" class="tech__item">Ремонт ноутбуков</a>
+    </div>
+  </section>
+  <!-- tech (end) -->
+  <!-- price table (start) -->
+  <section class="price">
+    <h2 class="price__title title-section">
+      Цены на услуги
+    </h2>
+    <div class="price-content">
+      <div class="price-table">
+        <div class="price-table__row">
+          <div class="price-table__cell">Ремонтные услуги</div>
+          <div class="price-table__cell">Диагностика</div>
+          <div class="price-table__cell">Цена</div>
+          <div class="price-table__cell">Бесплатно</div>
+          <div class="price-table__cell">Срок</div>
+          <div class="price-table__cell">30 мин</div>
+          <div class="price-table__cell"><button class="price__order price__order--icon-arrow" type="button">заказать</button></div>
+        </div>
+      </div>
+      <div class="price-table">
+        <div class="price-table__row">
+          <div class="price-table__cell">Ремонтные услуги</div>
+          <div class="price-table__cell">Тестирование с выдачей технического заключения</div>
+          <div class="price-table__cell">Цена</div>
+          <div class="price-table__cell">1000 &#8381;</div>
+          <div class="price-table__cell">Срок</div>
+          <div class="price-table__cell">30-120 мин</div>
+          <div class="price-table__cell"><button class="price__order price__order--icon-arrow" type="button">заказать</button></div>
+        </div>
+      </div>
+      <div class="price-table">
+        <div class="price-table__row">
+          <div class="price-table__cell">Ремонтные услуги</div>
+          <div class="price-table__cell">Замена дисплея</div>
+          <div class="price-table__cell">Цена</div>
+          <div class="price-table__cell">1000 &#8381;</div>
+          <div class="price-table__cell">Срок</div>
+          <div class="price-table__cell">30-120 мин</div>
+          <div class="price-table__cell"><button class="price__order price__order--icon-arrow" type="button">заказать</button></div>
+        </div>
+      </div>
+      <div class="price-table">
+        <div class="price-table__row">
+          <div class="price-table__cell">Ремонтные услуги</div>
+          <div class="price-table__cell">Замена полифонического динамика</div>
+          <div class="price-table__cell">Цена</div>
+          <div class="price-table__cell">1000 &#8381;</div>
+          <div class="price-table__cell">Срок</div>
+          <div class="price-table__cell">30-120 мин</div>
+          <div class="price-table__cell"><button class="price__order price__order--icon-arrow" type="button">заказать</button></div>
+          </div>
+      </div>
+      <div class="price-table">
+        <div class="price-table__row">
+          <div class="price-table__cell">Ремонтные услуги</div>
+          <div class="price-table__cell">Замена програмного обеспечения</div>
+          <div class="price-table__cell">Цена</div>
+          <div class="price-table__cell">1000 &#8381;</div>
+          <div class="price-table__cell">Срок</div>
+          <div class="price-table__cell">30-120 мин</div>
+          <div class="price-table__cell"><button class="price__order price__order--icon-arrow" type="button">заказать</button></div>
+        </div>
+      </div>
+    </div>
+    <div class="price__text">
+      <p>Все цены указаны с учетом НДС. Стоимость ремонта указана на единичную услугу.
+        Для получения коммерческого предложения на постоянное обслуживание оставьте заявку.</p>
+
+      <div class="price__offer">
+        <a class="price__link" href="#">Получить коммерческое предложение</a>
+      </div>
+    </div>
+  </section>
+  <!-- price table (end) -->
+
+  <!-- footer (start) -->
+  <footer class="footer">
+    <div class="footer__text">&copy; 2019 cps<br> Разработано командой Apesong</div>
+    <div class="footer__text"><a class="footer__link" href="">Политика конфиденциальности</a></div>
+    <div class="footer__text">Информация размещенная на данной странице не является публичной офертой</div>
+  </footer>
+  <!-- footer (end) -->
+</main>
+
+</body>
+</html>

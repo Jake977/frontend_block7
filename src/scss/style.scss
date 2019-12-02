@@ -1,0 +1,159 @@
+$color1: #FF3E79;
+$color1_sat10: #FF004E;
+$text: #1B1C21;
+$graytext: #7E7E82;
+$font-family: "TT Lakes";
+$bgColor: #f8f8f8;
+
+@import "fonts";
+@import "menu";
+@import "brands";
+@import "tech";
+@import "price";
+
+.site {
+  font-family: $font-family;
+  background-color: #F2F2F2;
+  color: $text;
+  max-width: 320px;
+  margin: 10px auto;
+}
+
+.main {
+  background-color: $bgColor;
+}
+
+.title-section {
+  border-top: 1px solid #D9FFF5;
+  background: linear-gradient(90deg, #F8F8F8 0%, #FFFFFF 100%);
+  text-transform: uppercase;
+  padding: 20px 0 20px 32px;
+  box-sizing: border-box;
+  font-weight: normal;
+  font-size: 16px;
+  color: $graytext;
+}
+
+.icon {
+  display: inline-block;
+  vertical-align: middle;
+  width: 40px;
+  height: 40px;
+  background-color: $color1;
+  border-radius: 50%;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+
+.icon:hover{
+  background-color: $color1_sat10;
+}
+
+.header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #ffffff;
+  height: 85px;
+}
+
+.header__divider {
+  height: 32px;
+  width: 2px;
+  background-color: #EAEAEA;
+}
+
+.button {
+  font-family: $font-family;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.button__text {
+  font-size: 16px;
+  height: 40px;
+  line-height: 40px;
+}
+
+.icon--burger {
+  background-image: url("../img/icon_burger.svg");
+}
+
+.icon--repair {
+  background-image: url("../img/icon_repair.svg");
+}
+
+.icon--checkstatus {
+  background-image: url("../img/icon_checkstatus.svg");
+}
+
+.button--readmore {
+  background-image: url("../img/icon_arrows_down.svg");
+  background-position: 0% 50%;
+  background-repeat: no-repeat;
+  padding-left: 30px;
+}
+
+.service {
+  border-top: 1px solid #D9FFF5;
+}
+
+.service__title {
+  margin:0;
+  padding:0 32px;
+  height: 40px;
+  font-size: 28px;
+  font-weight: bold;
+  line-height: 40px;
+  letter-spacing: -0.6px;
+  white-space: nowrap;
+  border-left: 3px solid #41F6D7;
+  flex-grow: 1;
+}
+
+.service__header {
+  margin: 24px 0;
+}
+
+.service__buttons--visibility {
+  display: none;
+}
+
+.service__text--visibility {
+  display: none;
+}
+
+.content__text {
+  margin: 30px;
+}
+
+.content__img {
+  max-width: 100%;
+}
+
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-top: 1px solid #D9FFF5;
+  color: $graytext;
+  padding: 10px;
+  font-size: 14px;
+}
+
+.footer .footer__text {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.footer .footer__link {
+  text-decoration: none;
+  color: $graytext;
+}
+
+.footer .footer__link:hover {
+  text-decoration: underline;
+}
