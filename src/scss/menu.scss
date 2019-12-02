@@ -8,13 +8,13 @@
   font-size: 16px;
 }
 
-.menu .menu__item {
+.menu__item {
   display: flex;
   justify-content: flex-start;
   margin: 0 0 10px -4px;
 }
 
-.menu .menu__link {
+.menu__link {
   display: block;
   white-space: nowrap;
   text-decoration: none;
@@ -24,7 +24,7 @@
   background-color: transparent;
 }
 
-.menu .menu__item--active {
+.menu__item--active {
   border: 2px solid #B8FFEC;
   border-radius: 6px;
   background: #FFFFFF;

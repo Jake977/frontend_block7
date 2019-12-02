@@ -5,12 +5,6 @@ $graytext: #7E7E82;
 $font-family: "TT Lakes";
 $bgColor: #f8f8f8;
 
-@import "fonts";
-@import "menu";
-@import "brands";
-@import "tech";
-@import "price";
-
 .site {
   font-family: $font-family;
   background-color: #F2F2F2;
@@ -48,6 +42,12 @@ $bgColor: #f8f8f8;
 .icon:hover{
   background-color: $color1_sat10;
 }
+
+@import "fonts";
+@import "menu";
+@import "brands";
+@import "tech";
+@import "price";
 
 .header {
   display: flex;
@@ -133,7 +133,6 @@ $bgColor: #f8f8f8;
   max-width: 100%;
 }
 
-
 .footer {
   display: flex;
   flex-direction: column;
@@ -144,16 +143,16 @@ $bgColor: #f8f8f8;
   font-size: 14px;
 }
 
-.footer .footer__text {
+.footer__text {
   text-align: center;
   margin-bottom: 10px;
 }
 
-.footer .footer__link {
+.footer__link {
   text-decoration: none;
   color: $graytext;
 }
 
-.footer .footer__link:hover {
+.footer__link:hover {
   text-decoration: underline;
 }

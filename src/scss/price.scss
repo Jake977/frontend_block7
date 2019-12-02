@@ -39,7 +39,7 @@
   right: 15px;
 }
 
-.price-table .price__order {
+.price__order {
   background-color: $color1;
   width: 120px;
   height: 32px;
@@ -54,11 +54,11 @@
   color: #ffffff;
 }
 
-.price-table .price__order:hover {
+.price__order:hover {
   background-color: $color1_sat10;
 }
 
-.price-table .price__order--icon-arrow {
+.price__order--icon-arrow {
    background-image: url("../img/icon_white_arrow.svg");
    background-position: 85% 50%;
    background-repeat: no-repeat;
