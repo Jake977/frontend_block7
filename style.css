@@ -1,3 +1,39 @@
+.site {
+  font-family: "TT Lakes";
+  background-color: #F2F2F2;
+  color: #1B1C21;
+  max-width: 320px;
+  margin: 10px auto; }
+
+.main {
+  background-color: #f8f8f8; }
+
+.title-section {
+  border-top: 1px solid #D9FFF5;
+  background: -webkit-gradient(linear, left top, right top, from(#F8F8F8), to(#FFFFFF));
+  background: -o-linear-gradient(left, #F8F8F8 0%, #FFFFFF 100%);
+  background: linear-gradient(90deg, #F8F8F8 0%, #FFFFFF 100%);
+  text-transform: uppercase;
+  padding: 20px 0 20px 32px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-weight: normal;
+  font-size: 16px;
+  color: #7E7E82; }
+
+.icon {
+  display: inline-block;
+  vertical-align: middle;
+  width: 40px;
+  height: 40px;
+  background-color: #FF3E79;
+  border-radius: 50%;
+  background-position: 50% 50%;
+  background-repeat: no-repeat; }
+
+.icon:hover {
+  background-color: #FF004E; }
+
 @font-face {
   font-family: 'TT Lakes';
   src: url(./fonts/TTLakes-Italic.eot);
@@ -198,42 +234,6 @@
   padding: 2px 0 0 5px; }
 
 /* prices (end) */
-.site {
-  font-family: "TT Lakes";
-  background-color: #F2F2F2;
-  color: #1B1C21;
-  max-width: 320px;
-  margin: 10px auto; }
-
-.main {
-  background-color: #f8f8f8; }
-
-.title-section {
-  border-top: 1px solid #D9FFF5;
-  background: -webkit-gradient(linear, left top, right top, from(#F8F8F8), to(#FFFFFF));
-  background: -o-linear-gradient(left, #F8F8F8 0%, #FFFFFF 100%);
-  background: linear-gradient(90deg, #F8F8F8 0%, #FFFFFF 100%);
-  text-transform: uppercase;
-  padding: 20px 0 20px 32px;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  font-weight: normal;
-  font-size: 16px;
-  color: #7E7E82; }
-
-.icon {
-  display: inline-block;
-  vertical-align: middle;
-  width: 40px;
-  height: 40px;
-  background-color: #FF3E79;
-  border-radius: 50%;
-  background-position: 50% 50%;
-  background-repeat: no-repeat; }
-
-.icon:hover {
-  background-color: #FF004E; }
-
 .header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -278,6 +278,7 @@
   background-repeat: no-repeat;
   padding-left: 30px; }
 
+/* service (start) */
 .service {
   border-top: 1px solid #D9FFF5; }
 
@@ -310,6 +311,8 @@
 .content__img {
   max-width: 100%; }
 
+/* service (end) */
+/* footer (start) */
 .footer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -336,6 +339,8 @@
 
 .footer__link:hover {
   text-decoration: underline; }
+
+/* footer (end) */
 
 
 /*# sourceMappingURL=style.css.map*/
