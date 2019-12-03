@@ -1,0 +1,85 @@
+html {
+  font-family: $font-family, sans-serif;
+  background-color: #F2F2F2;
+  color: $text;
+  max-width: 320px;
+  margin: 10px auto;
+  font-size: $font-size;
+}
+
+.main {
+  background-color: $bg-color;
+}
+
+.title-section {
+  border-top: 1px solid #D9FFF5;
+  background: linear-gradient(90deg, #F8F8F8 0%, #FFFFFF 100%);
+  text-transform: uppercase;
+  padding: 20px 0 20px 32px;
+  box-sizing: border-box;
+  font-weight: normal;
+  font-size: 16px;
+  color: $text-gray;
+}
+
+.icon {
+  display: inline-block;
+  vertical-align: middle;
+  width: 40px;
+  height: 40px;
+  background-color: $main-color;
+  border-radius: 50%;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+
+  &:hover {
+    background-color: $main-color-hover;
+  }
+}
+
+.header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #ffffff;
+  height: 85px;
+}
+
+.header__divider {
+  height: 32px;
+  width: 2px;
+  background-color: #EAEAEA;
+}
+
+.button {
+  font-family: $font-family;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.button__text {
+  font-size: 16px;
+  line-height: 40px;
+  height: 40px;
+}
+
+.icon--burger {
+  background-image: url("../img/icon_burger.svg");
+}
+
+.icon--repair {
+  background-image: url("../img/icon_repair.svg");
+}
+
+.icon--checkstatus {
+  background-image: url("../img/icon_checkstatus.svg");
+}
+
+.button--readmore {
+  background-image: url("../img/icon_arrows_down.svg");
+  background-position: 0% 50%;
+  background-repeat: no-repeat;
+  padding-left: 30px;
+}
