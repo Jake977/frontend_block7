@@ -1,0 +1,40 @@
+.service {
+  border-top: 1px solid #D9FFF5;
+
+  &__title {
+    margin:0;
+    padding:0 32px;
+    height: 40px;
+    font-size: 28px;
+    font-weight: bold;
+    line-height: 40px;
+    letter-spacing: -0.6px;
+    white-space: nowrap;
+    border-left: 3px solid #41F6D7;
+    flex-grow: 1;
+  }
+
+  &__header {
+    margin: 24px 0;
+  }
+
+  &__buttons--visibility {
+    display: none;
+  }
+
+  &__text--visibility {
+    display: none;
+  }
+
+  .content__text {
+    margin: 30px;
+  }
+
+  .content__img {
+    max-width: 100%;
+  }
+}
+
+
+
+
