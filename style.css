@@ -41,6 +41,7 @@ html {
   font-size: 14px; }
 
 .main {
+  position: relative;
   background-color: #f8f8f8; }
 
 .title-section {
@@ -82,6 +83,7 @@ html {
   font-size: 16px;
   border: none;
   cursor: pointer;
+  padding: 0;
   background-color: transparent; }
 
 .button__text {
@@ -89,14 +91,44 @@ html {
   line-height: 40px;
   height: 40px; }
 
-.icon--burger {
+.button-icon {
+  display: inline-block;
+  vertical-align: middle;
+  width: 40px;
+  height: 40px;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  background-color: #FF3E79;
+  border-radius: 50%;
+  background-position: 50% 50%;
+  background-repeat: no-repeat; }
+  .button-icon:hover {
+    background-color: #FF004E; }
+
+.button-icon--burger {
   background-image: url(./static/icon_burger.svg); }
 
-.icon--repair {
+.button-icon--repair {
   background-image: url(./static/icon_repair.svg); }
 
-.icon--checkstatus {
+.button-icon--checkstatus {
   background-image: url(./static/icon_checkstatus.svg); }
+
+.button-icon--cross {
+  background-image: url(./static/icon_cross.svg); }
+
+.button-icon--search {
+  background-image: url(./static/icon_search.svg); }
+
+.button-icon--phone {
+  background-image: url(./static/icon_phone.svg); }
+
+.button-icon--chat {
+  background-image: url(./static/icon_chat.svg); }
+
+.button-icon--profile {
+  background-image: url(./static/icon_profile.svg); }
 
 .button--readmore {
   background-image: url(./static/icon_arrows_down.svg);
@@ -126,6 +158,95 @@ html {
 
 .swiper-pagination-bullet-active {
   background-color: #B5B6BC; }
+
+.sidebar {
+  height: 100%;
+  box-sizing: border-box;
+  position: absolute;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  width: 0;
+  overflow: hidden;
+  font-size: 16px;
+  background-color: #ffffff;
+  box-shadow: 16px 0 10px -10px rgba(14, 24, 80, 0.2);
+  display: flex;
+  flex-direction: column;
+  transition: width, 0.25s ease; }
+  .sidebar__container {
+    padding: 18px; }
+  .sidebar__header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center; }
+  .sidebar__header .button-icon:first-child {
+    margin-right: 16px; }
+  .sidebar__header .button-icon:last-child {
+    margin-left: auto; }
+  .sidebar__menu {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-grow: 1; }
+  .sidebar__link {
+    position: relative;
+    display: block;
+    padding: 8px 0;
+    color: #1B1C21;
+    text-decoration: none;
+    white-space: nowrap; }
+    .sidebar__link--active {
+      color: #7E7E82; }
+    .sidebar__link--active::before {
+      position: absolute;
+      content: "";
+      top: 0;
+      left: -18px;
+      width: 4px;
+      height: 100%;
+      background-color: #41F6D7; }
+  .sidebar__icons {
+    margin-bottom: 20px;
+    white-space: nowrap; }
+  .sidebar__icons > .button-icon {
+    margin-right: 16px; }
+  .sidebar__lang {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start; }
+  .sidebar__langlink {
+    display: block;
+    margin-right: 8px;
+    text-decoration: none;
+    color: #1B1C21; }
+    .sidebar__langlink--active {
+      text-decoration: none;
+      color: #7E7E82; }
+  .sidebar__footer--rowspace {
+    margin-bottom: 20px; }
+
+.mail__link:link,
+.mail__link:visited,
+.mail__link:hover,
+.mail__link:active {
+  color: #1B1C21; }
+
+.phone__num {
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: bold;
+  white-space: nowrap; }
+
+.sidebar--show {
+  width: 100%; }
+
+.sidebar--hide {
+  width: 0; }
 
 .service {
   border-top: 1px solid #D9FFF5; }

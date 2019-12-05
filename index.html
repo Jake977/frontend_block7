@@ -10,21 +10,52 @@
 <main class="main">
   
   <section class="header">
-      <button class="button" type="button">
-        <div class="icon icon--burger"></div>
-      </button>
-      <div class="logo">
-        <img class="logo__img" src="./img/csp_logo.svg" alt="">
-      </div>
-      <div class="header__divider"></div>
-      <button class="button" type="button">
-        <div class="icon icon--repair"></div>
-      </button>
-      <button class="button" type="button">
-        <div class="icon icon--checkstatus"></div>
-      </button>
+    <button class="button-icon button-icon--burger" type="button" data-icon="burger"></button>
+    <div class="logo"><img class="logo__img" src="./img/csp_logo.svg" alt=""></div>
+    <div class="header__divider"></div>
+    <button class="button-icon button-icon--repair" type="button" data-icon="repair"></button>
+    <button class="button-icon button-icon--checkstatus" type="button" data-icon="checkstatus"></button>
   </section>
   
+
+  
+  <section class="sidebar">
+    <div class="sidebar__container">
+    <div class="sidebar__header">
+      <button class="button-icon button-icon--cross" type="button" data-icon="cross"></button>
+      <div class="logo"><img class="logo__img" src="./img/csp_logo.svg" alt=""></div>
+      <button class="button-icon button-icon--search" type="button" data-icon="search"></button>
+    </div>
+    <nav>
+      <ul class="sidebar__menu">
+        <li class="sidebar__item"><a class="sidebar__link sidebar__link--active" href="#">Ремонт техники</a></li>
+        <li class="sidebar__item"><a class="sidebar__link" href="#">Услуги и сервисы</a></li>
+        <li class="sidebar__item"><a class="sidebar__link" href="#">Корпоративным клиентам</a></li>
+        <li class="sidebar__item"><a class="sidebar__link" href="#">Продавцам техники</a></li>
+        <li class="sidebar__item"><a class="sidebar__link" href="#">Партнёрам</a></li>
+        <li class="sidebar__item"><a class="sidebar__link" href="#">Производителям</a></li>
+        <li class="sidebar__item"><a class="sidebar__link" href="#">Наши сервисные центры</a></li>
+        <li class="sidebar__item"><a class="sidebar__link" href="#">Контакты</a></li>
+      </ul>
+    </nav>
+    <div class="sidebar__footer">
+      <div class="sidebar__icons sidebar__footer--rowspace">
+        <button class="button-icon button-icon--phone" type="button" data-icon="phone"></button>
+        <button class="button-icon button-icon--chat" type="button" data-icon="chat"></button>
+        <button class="button-icon button-icon--profile" type="button" data-icon="profile"></button>
+      </div>
+      <div class="sidebar__footer--rowspace"><a class="mail__link" href="mailto:mail@cps.com">mail@cps.com</a></div>
+      <div class="phone__num sidebar__footer--rowspace">8 800 890 8900</div>
+      <div class="sidebar__lang">
+        <div><a class="sidebar__langlink sidebar__langlink--active" href="#">RU</a></div>
+        <div><a class="sidebar__langlink" href="#">EN</a></div>
+        <div><a class="sidebar__langlink" href="#">CH</a></div>
+      </div>
+    </div>
+    </div>
+  </section>
+  
+
   
   <section class="service">
     <div class="service__header">
