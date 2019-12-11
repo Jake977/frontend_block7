@@ -34,15 +34,26 @@
 
 html {
   font-family: "TT Lakes", sans-serif;
-  background-color: #F2F2F2;
+  background-color: yellowgreen;
   color: #1B1C21;
-  max-width: 320px;
-  margin: 10px auto;
-  font-size: 14px; }
+  min-width: 320px;
+  font-size: 14px;
+  margin: 0;
+  padding: 0; }
 
 .main {
-  position: relative;
-  background-color: #f8f8f8; }
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+  background-color: #f8f8f8;
+  max-width: 1440px;
+  margin: 0 auto; }
+
+.site-content {
+  display: flex;
+  flex-direction: column;
+  background-color: brown;
+  height: 100%; }
 
 .title-section {
   border-top: 1px solid #D9FFF5;
@@ -72,11 +83,13 @@ html {
   align-items: center;
   background-color: #ffffff;
   height: 85px; }
-
-.header__divider {
-  height: 32px;
-  width: 2px;
-  background-color: #EAEAEA; }
+  .header__divider {
+    height: 32px;
+    width: 2px;
+    background-color: #EAEAEA; }
+  @media screen and (min-width: 1100px) {
+    .header {
+      display: none; } }
 
 .button {
   font-family: "TT Lakes";
@@ -138,12 +151,12 @@ html {
 
 .brands .swiper-container {
   box-sizing: border-box;
-  width: 260px;
+  width: 100%;
   height: 125px; }
 
 .tech .swiper-container {
   box-sizing: border-box;
-  width: 260px;
+  width: 100%;
   height: 210px; }
 
 .price .swiper-container {
@@ -160,19 +173,18 @@ html {
   background-color: #B5B6BC; }
 
 .sidebar {
-  height: 100%;
-  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
   position: absolute;
   z-index: 10;
   top: 0;
   left: 0;
-  width: 0;
   overflow: hidden;
+  width: 0;
+  height: 100vh;
+  box-sizing: border-box;
   font-size: 16px;
   background-color: #ffffff;
-  box-shadow: 16px 0 10px -10px rgba(14, 24, 80, 0.2);
-  display: flex;
-  flex-direction: column;
   transition: width, 0.25s ease; }
   .sidebar__container {
     padding: 18px; }
@@ -229,6 +241,17 @@ html {
       color: #7E7E82; }
   .sidebar__footer--rowspace {
     margin-bottom: 20px; }
+  .sidebar--show {
+    width: 320px;
+    box-shadow: 16px 0 10px -10px rgba(14, 24, 80, 0.2); }
+    @media screen and (max-width: 320px) {
+      .sidebar--show {
+        width: 100%; } }
+  @media screen and (min-width: 1100px) {
+    .sidebar {
+      width: 310px;
+      position: relative;
+      background-color: #007aff; } }
 
 .mail__link:link,
 .mail__link:visited,
@@ -242,14 +265,10 @@ html {
   font-weight: bold;
   white-space: nowrap; }
 
-.sidebar--show {
-  width: 100%; }
-
-.sidebar--hide {
-  width: 0; }
-
 .service {
-  border-top: 1px solid #D9FFF5; }
+  border-top: 1px solid #D9FFF5;
+  display: flex;
+  flex-direction: column; }
   .service__title {
     margin: 0;
     padding: 0 32px;
@@ -267,18 +286,28 @@ html {
     display: none; }
   .service__text--visibility {
     display: none; }
+  .service__content-text {
+    display: flex;
+    flex-direction: column; }
+    @media screen and (min-width: 600px) {
+      .service__content-text {
+        flex-direction: row; } }
   .service .content__text {
-    margin: 30px; }
+    margin: 0 14px 14px; }
+    @media screen and (min-width: 600px) {
+      .service .content__text {
+        flex-basis: 50%; } }
   .service .content__img {
     max-width: 100%; }
 
 .menu {
   display: flex;
-  flex-wrap: wrap;
-  margin: 10px 30px;
+  flex-wrap: nowrap;
+  margin: 10px 14px;
   padding: 0;
   list-style: none;
-  font-size: 16px; }
+  font-size: 16px;
+  overflow-x: auto; }
   .menu__item {
     display: flex;
     justify-content: flex-start;
@@ -286,7 +315,8 @@ html {
   .menu__item--active {
     border: 2px solid #B8FFEC;
     border-radius: 6px;
-    background: #FFFFFF; }
+    background: #FFFFFF;
+    margin-left: 1px; }
   .menu__link {
     display: block;
     white-space: nowrap;
@@ -296,11 +326,15 @@ html {
     color: #7E7E82;
     background-color: transparent; }
 
+.brands__content {
+  margin: 14px; }
+
 .brands__item {
   display: block;
   box-sizing: border-box;
   height: 72px;
   min-width: 230px;
+  max-width: 260px;
   padding: 5px 20px;
   border: 1px solid #EAEAEA;
   border-radius: 6px;
@@ -324,14 +358,14 @@ html {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
-  align-content: flex-start;
-  flex-wrap: nowrap; }
+  align-content: flex-start; }
 
 .tech__item {
   display: block;
   box-sizing: border-box;
   height: 155px;
   min-width: 230px;
+  max-width: 260px;
   padding: 15px 20px;
   border: 1px solid #EAEAEA;
   border-radius: 6px;
@@ -355,7 +389,6 @@ html {
 .price .price-table {
   display: flex;
   flex-direction: column;
-  flex-wrap: nowrap;
   padding: 0;
   list-style: none; }
   .price .price-table__row {
@@ -397,7 +430,8 @@ html {
   background-repeat: no-repeat; }
 
 .price__text {
-  margin: 30px; }
+  margin: 30px;
+  max-width: 420px; }
 
 .price__offer {
   position: relative; }
@@ -426,12 +460,169 @@ html {
   padding: 10px; }
   .footer__text {
     text-align: center;
-    margin-bottom: 10px; }
+    margin-bottom: 10px;
+    flex-grow: 1; }
+    @media screen and (min-width: 768px) {
+      .footer__text {
+        text-align: left;
+        flex-basis: 33%; } }
   .footer__link {
     text-decoration: none;
     color: #7E7E82; }
     .footer__link:hover {
       text-decoration: underline; }
+  @media screen and (min-width: 768px) {
+    .footer {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      padding: 35px 25px 25px; } }
+
+.modal-phone {
+  position: absolute;
+  z-index: 11;
+  top: 0;
+  right: 0;
+  overflow: hidden;
+  width: 0;
+  height: 100%;
+  box-sizing: border-box;
+  background-color: #ffffff;
+  transition: width, 0.25s ease; }
+  .modal-phone__container {
+    padding: 16px; }
+  .modal-phone__title {
+    position: relative;
+    margin: 30px 0;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 40px;
+    letter-spacing: -0.6px;
+    white-space: nowrap;
+    vertical-align: middle; }
+  .modal-phone__title:before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: -16px;
+    width: 4px;
+    height: 100%;
+    background-color: #41F6D7; }
+  .modal-phone__text-field {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #EAEAEA;
+    border-radius: 8px;
+    font-family: "TT Lakes";
+    font-size: 16px; }
+  .modal-phone__text-field::placeholder {
+    color: #B5B6BC; }
+  .modal-phone__text {
+    font-size: 14px;
+    line-height: 16px;
+    min-width: 270px; }
+  .modal-phone__text--maincolor {
+    color: #FF3E79; }
+  .modal-phone__btn-container {
+    text-align: right; }
+  .modal-phone__send-button {
+    background-color: #FF3E79;
+    width: 120px;
+    height: 32px;
+    border-radius: 16px;
+    border: none;
+    text-align: left;
+    padding-left: 20px;
+    cursor: pointer;
+    font-size: 12px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: #ffffff; }
+    .modal-phone__send-button--icon-arrow {
+      background-image: url(./static/icon_white_arrow.svg);
+      background-position: 85% 50%;
+      background-repeat: no-repeat; }
+    .modal-phone__send-button:hover {
+      background-color: #FF004E; }
+  .modal-phone--show {
+    width: 320px;
+    box-shadow: -16px 0 10px -10px rgba(14, 24, 80, 0.2); }
+    @media screen and (max-width: 320px) {
+      .modal-phone--show {
+        width: 100%; } }
+
+.modal-chat {
+  position: absolute;
+  z-index: 11;
+  top: 0;
+  right: 0;
+  overflow: hidden;
+  width: 0;
+  height: 100%;
+  box-sizing: border-box;
+  background-color: #ffffff;
+  transition: width, 0.25s ease; }
+  .modal-chat__container {
+    padding: 16px; }
+  .modal-chat__title {
+    position: relative;
+    margin: 30px 0;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 40px;
+    letter-spacing: -0.6px;
+    white-space: nowrap;
+    vertical-align: middle; }
+  .modal-chat__title:before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: -16px;
+    width: 4px;
+    height: 100%;
+    background-color: #41F6D7; }
+  .modal-chat__text-field, .modal-chat__textarea {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #EAEAEA;
+    border-radius: 8px;
+    font-family: "TT Lakes";
+    font-size: 16px; }
+  .modal-chat__text-field::placeholder, .modal-chat__textarea::placeholder {
+    color: #B5B6BC; }
+  .modal-chat__text-field {
+    margin-bottom: 14px; }
+  .modal-chat__text {
+    font-size: 14px;
+    line-height: 16px;
+    min-width: 270px; }
+  .modal-chat__text--maincolor {
+    color: #FF3E79; }
+  .modal-chat__btn-container {
+    text-align: right; }
+  .modal-chat__send-button {
+    background-color: #FF3E79;
+    width: 120px;
+    height: 32px;
+    border-radius: 16px;
+    border: none;
+    text-align: left;
+    padding-left: 20px;
+    cursor: pointer;
+    font-size: 12px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: #ffffff; }
+    .modal-chat__send-button--icon-arrow {
+      background-image: url(./static/icon_white_arrow.svg);
+      background-position: 85% 50%;
+      background-repeat: no-repeat; }
+    .modal-chat__send-button:hover {
+      background-color: #FF004E; }
+  .modal-chat--show {
+    width: 100%; }
 
 
 /*# sourceMappingURL=style.css.map*/
